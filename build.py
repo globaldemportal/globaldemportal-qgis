@@ -24,6 +24,7 @@ INCLUDE_FILES = [
     "__init__.py",
     "metadata.txt",
     "LICENSE",
+    "README.md",
     "plugin.py",
     "panel.py",
     "widgets.py",
@@ -43,6 +44,9 @@ INCLUDE_FILES = [
     os.path.join("data", "india_boundary.json"),
     os.path.join("data", "india_corrections.gpkg"),
     os.path.join("resources", "icon.png"),
+    os.path.join("docs", "download-dialog.png"),
+    os.path.join("docs", "mosaic.png"),
+    os.path.join("docs", "panel.png")
 ]
 
 #: build.py itself is a development tool - shipping it would only confuse a
