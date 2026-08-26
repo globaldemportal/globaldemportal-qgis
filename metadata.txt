@@ -1,0 +1,18 @@
+[general]
+name=Global DEM Portal
+qgisMinimumVersion=3.22
+qgisMaximumVersion=4.99
+supportsQt6=True
+description=Select 1°x1° tiles on a map and download nine free global DEMs (SRTM, NASADEM, ALOS, Copernicus, Mapzen, ANADEM, GEDTM30) straight into QGIS - no account, no API key.
+about=Wraps the Global DEM Portal web app (https://globaldemportal.github.io) as a dockable QGIS plugin. Pick a DSM/DTM source, select tiles by click, rectangle, polygon, country search or an existing QGIS layer, and download. Tiles come from the OpenTopography public mirror (and the AWS terrain-tiles bucket for Mapzen) anonymously - no Earthdata login and no API key. Downloads are intercepted, unzipped/gunzipped as needed and added to the map as raster layers.
+version=1.4
+author=Sharad Kumar Gupta
+email=sharadgupta27@gmail.com
+tracker=https://github.com/globaldemportal/globaldemportal-qgis/issues
+repository=https://github.com/globaldemportal/globaldemportal-qgis
+homepage=https://globaldemportal.github.io
+experimental=False
+deprecated=False
+icon=resources/icon.png
+category=Plugins
+tags=dem,elevation,srtm,nasadem,alos,copernicus,terrain,raster,download,opentopography,gedtm30,anadem,mapzen,hydrology
