@@ -16,3 +16,15 @@ deprecated=False
 icon=resources/icon.png
 category=Plugins
 tags=dem,elevation,srtm,nasadem,alos,copernicus,terrain,raster,download,opentopography,gedtm30,anadem,mapzen,hydrology
+changelog=
+    1.4.1
+    - Basemap fix. CARTO began requiring an API key for its raster tiles, so the
+      panel's map filled with tiles stamped "API KEY REQUIRED". The plugin now
+      supplies a key and the map draws normally again.
+    - DEM downloads are unchanged and still need no account and no API key.
+    1.4
+    - First release, numbered 1.4 to match the web app it mirrors. A native Qt
+      panel - no web view, no local server - with nine DEM sources, Dataset
+      Options split into Type (DSM or DTM) and Source, tile selection by click,
+      rectangle, polygon, country search or an existing QGIS layer, and
+      mosaicking with seam levelling.
