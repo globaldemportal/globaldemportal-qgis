@@ -39,8 +39,14 @@ from .theme import C
 WGS84 = QgsCoordinateReferenceSystem("EPSG:4326")
 WEB_MERCATOR = QgsCoordinateReferenceSystem("EPSG:3857")
 
+#: CARTO retired anonymous access to its raster basemaps: keyless requests still
+#: return 200, but every tile comes back stamped "API KEY REQUIRED".  This is a
+#: free basemap key (carto.com/basemaps/apikey, 5M tiles/month), the same one the
+#: page uses; like every web-map key it travels with each tile request.
+CARTO_KEY = "cb1_2gk6_1_a3b54bc42ff504272799f848"
+
 #: Same basemap the page defaults to - CARTO's dark raster, rendered from OSM.
-BASEMAP_URL = "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png"
+BASEMAP_URL = "https://basemaps.cartocdn.com/dark_all/{z}/{x}/{y}.png?key=" + CARTO_KEY
 BASEMAP_LABEL = "© OpenStreetMap contributors, © CARTO"
 
 #: The page constrains the map to a single world: no infinite horizontal wrap, no
